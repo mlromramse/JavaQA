@@ -1,16 +1,32 @@
-Customize layout:
+Setup:
+This is a standard Java web app running on Tomcat6+, JDK6+ and MySQL.
 
-
+At setup end, the default operator is "administrator" with empty password.
 
 Customize labels:
+
+Enter the web app ad administrator, go to settings -> label section.
 If you are starting from "Pupunzi"'s model, search for "Pupunzi" in labels and replace with your links and texts.
 
+Here are some labels that you should change:
+
+#LEFT COLUMN BOXES
+
+QA_BOX1_TITLE
+QA_BOX1_BODYTEXT
+
+QA_BOX2_TITLE
+QA_BOX2_BODYTEXT
+
+QA_PROMO_BOX
+
+QA_REFERENCE
+QA_REF_SITE
+
+#GOOGLE TRACKING CODE
+QA_GOOGLE_CODE
+
 --------------------------------------------------------------
-
- //String apikey = "b2b8fcbd0092cb5613242342342384d48b901f4-us6";
- //String listId = "d22323203ad6";
- //String mailingServerDomain = "us6.api.mailchimp.com";
-
   String mailingServerDomain = I18n.g("QA_MAILING_DOMAIN");
   String apikey = I18n.g("QA_MAILING_APIKEY");
   String listId = I18n.g("QA_MAILING_LISTID");
@@ -29,18 +45,5 @@ QUESTION_GRACE=no
 #TAGS USAGE CUTOFF
 QUESTION_TAG_CUTOFF=1
 
-#LEFT COLUMN BOXES
-QA_BOX1_TITLE
-QA_BOX1_BODYTEXT
 
-QA_BOX2_TITLE
-QA_BOX2_BODYTEXT
-
-QA_PROMO_BOX
-
-QA_REFERENCE
-QA_REF_SITE
-
-#GOOGLE TRACKING CODE
-QA_GOOGLE_CODE
 
