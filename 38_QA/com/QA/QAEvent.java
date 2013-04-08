@@ -1,0 +1,30 @@
+package com.QA;
+
+
+public enum QAEvent {
+
+
+
+  QUESTION_VISITED(0),
+  QUESTION_CREATE(0.3),
+  QUESTION_EDIT(0.05),
+  QUESTION_ANSWER_CREATE(0.4),
+  QUESTION_ANSWER_ACCEPT(0.5),
+  QUESTION_UPVOTE(0.3),
+  QUESTION_COMMENT_CREATE(0.1),
+  QUESTION_COMMENT_LIKE(0.1),
+  QUESTION_SIGNALLED(0.01),
+
+  QUESTION_ANSWER_UPVOTE(0.2),
+  QUESTION_ANSWER_COMMENT_CREATE(0.1),
+  QUESTION_ANSWER_COMMENT_LIKE(0.1),
+
+  COMMENT_SIGNALED(0.1);
+
+
+  public final double value;
+
+  QAEvent(double value) {
+    this.value = value;
+  }
+}

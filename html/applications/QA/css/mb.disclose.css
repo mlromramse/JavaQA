@@ -1,0 +1,87 @@
+/*
+ * jquery.mb.components
+ * Copyright (c) 2001-2012. Matteo Bicocchi (Pupunzi); Open lab srl, Firenze - Italy
+ * email: mbicocchi@open-lab.com
+ * site: http://pupunzi.com
+ *
+ * Licences: MIT, GPL
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ */
+
+/*
+* jQuery.mb.components: 
+* © 2001 - 2012 Matteo Bicocchi (pupunzi), Open Lab
+*
+*/
+
+@charset "UTF-8";
+
+
+.mbDiscloseWrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-backface-visibility: hidden;
+  /*-webkit-transform:translate3d(0,0,0);*/
+  /*-moz-backface-visibility: hidden;*/
+  /*-moz-transform:translate3d(0,0,0);*/
+}
+
+.mbDiscloseWrapper [data-animate]{
+  -webkit-backface-visibility: hidden;
+  /*-webkit-transform:translate3d(0,0,0);*/
+  /*-moz-backface-visibility: hidden;*/
+  /*-moz-transform:translate3d(0,0,0);*/
+}
+
+.idxContainer{
+  display: inline-block;
+  padding: 2px;
+  height: 13px;
+}
+
+.idxPage{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+  cursor: pointer;
+}
+.idxPage.sel{
+
+}
+
+.playing .idxPage.sel{
+  background: rgba(77, 77, 77, 0.77);
+}
+
+.progressBar{
+  position: absolute;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.29);
+}
+
+.idxPage {
+    background:transparent url("/applications/QA/images/idxIcon.png") no-repeat top left;
+    height: 20px;
+    width: 20px
+}
+
+.idxPage:hover {
+    opacity: .8
+}
+
+.idxPage:active {
+    opacity: .6
+}
+
+.idxPage.sel {
+    background:transparent url("/applications/QA/images/idxIcon.png") no-repeat bottom left;
+}
+
+

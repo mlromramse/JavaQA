@@ -1,0 +1,10 @@
+<form id="IE" action="imagesManager.jsp" >
+   <input type="hidden" value="" name="maleficoIE" id="maleficoIE">
+</form>
+
+<div>loading data...</div>
+<script type="text/javascript">
+   var data=parent.imageManagerData;
+   document.getElementById("maleficoIE").value=data;
+   document.getElementById("IE").submit();
+</script>

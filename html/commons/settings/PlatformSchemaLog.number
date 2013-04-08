@@ -1,0 +1,14 @@
+Schema 1 (11902):
+toOperator on Message -> toEntityId (incompatible change - romeve column)
+alter table olpl_message add toEntityId nvarchar(255)
+Schema 2 (11903):
+reverted above :-(
+Schema 3 (11905):
+made roles loggable
+<property name="creationDate"/>
+    <property name="creator"/>
+    <property name="lastModifier"/>
+    <property name="lastModified"/>
+added on mapping
+
+

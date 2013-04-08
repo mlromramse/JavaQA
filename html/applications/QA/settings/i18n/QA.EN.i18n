@@ -1,0 +1,277 @@
+QA	ABOUT_QA	EN	how does it work
+QA	ADD_COMMENT	EN	comment
+QA	ALREADY_ENROLLED_GOTO_LOGIN	EN	If you already enrolled click this link to login:
+QA	ALREADY_ENROLLED_NO_EMAIL	EN	If you already enrolled without setting an e-mail, contact us.
+QA	ALREADY_ENROLLED_RESET_PASSWORD	EN	If you already enrolled click to reset your password:
+QA	ALREADY_EXISTING_EMAIL	EN	E-mail already in our archives.
+QA	ALREADY_EXISTING_LOGINNAME	EN	Already existing user name.
+QA	ALREADY_UNVERIFIED_EMAIL	EN	E-mail already recorded - unverified
+QA	ANSWER_ACCEPT	EN	accept this
+QA	ANSWER_ACCEPT_NO_MORE	EN	no longer accepted
+QA	ANSWER_BAN	EN	ban
+QA	ANSWER_BAN_SURE	EN	Sure to ban?
+QA	ANSWER_COMMENT_CONTENT_REPORTED	EN	Comment has been reported as inappropriate.
+QA	ANSWER_COMMENT_RESULT	EN	Result found in answer's comments
+QA	ANSWER_CONTENT_REPORTED	EN	Answer has been reported.
+QA	ANSWER_CREATED_ON	EN	Answered on %%
+QA	ANSWER_EDIT	EN	modify
+QA	ANSWER_LIKE	EN	like
+QA	ANSWER_REMOVE_SURE	EN	Sure you want to remove?
+QA	ANSWER_RESULT	EN	Result found in aswers
+QA	ANSWER_SAVE	EN	save answer
+QA	ANSWER_SIGNALLED_BY_%%	EN	This answer has been reported by %%
+QA	ASK_NEW_QUESTION	EN	ask question
+QA	ASK_QUESTION	EN	Ask a new question
+QA	BY	EN	by
+QA	BY_YOU	EN	by you
+QA	CHANGE_GRAVATAR	EN	Change your image on Gravatar
+QA	CLICK_HERE	EN	click here
+QA	COMMENT_ANSWER_SIGNALLED_BY_%%_%%_%%	EN	"The comment \"%%\" has been reported by \"%%\" (for the question: %%)"
+QA	COMMENT_REPORT	EN	inappropriate
+QA	COMMENT_REPORT_SURE	EN	Sure that the comment is inappropriate?
+QA	COMMENT_SAVE	EN	save comment
+QA	COMMENT_SIGNALLED_BY_%%	EN	A comment has been reported by %%
+QA	COMMUNITY_BACK	EN	back to community
+QA	EDIT_QUESTION	EN	modify
+QA	EMAIL_SUBSCRIPTIONS	EN	Notify events by e-mail
+QA	FOLLOW_US	EN	Follow us
+QA	IMPROVE_ANSWER	EN	improve the answer
+QA	IMPROVE_QUESTION	EN	improve this question
+QA	INSERT_EMAIL	EN	insert your e-mail
+QA	INSERT_EMAIL_GRAVATAR	EN	"Insert your e-mail to change your image on <a href=\"http://it.gravatar.com\">Gravatar</a>."
+QA	INVALID_CHARS	EN	Invalid characters
+QA	KARMA_LEVEL_1	EN	runner
+QA	KARMA_LEVEL_2	EN	junior writer
+QA	KARMA_LEVEL_3	EN	senior writer
+QA	KARMA_LEVEL_4	EN	script supervisor
+QA	KARMA_LEVEL_5	EN	author
+QA	KARMA_LEVEL_999	EN	moderator
+QA	LIKE_THIS	EN	I like this
+QA	LIKE_THIS_QUESTION	EN	Give 'like' to this question
+QA	LIKE_THIS_QUESTION_NOMORE	EN	Remove your like for this question
+QA	LOGINNAME_USE_VALID_CHARS	EN	Use only letters and numbers - no spaces.
+QA	LOGIN_NAME_NONEXISTING	EN	Non existing username.
+QA	LOGIN_TO_ANSWER	EN	log in to answer
+QA	MAILING_SUBSCRIPTIONS	EN	Mailing list subscription
+QA	MAIL_NOTIF_SUBSCRIBED	EN	Now you get e-mail notifications.
+QA	MAIL_NOTIF_UNSUBSCRIBED	EN	You will no longer get e-mail notifications.
+QA	MISSING_TAG	EN	Pick or write at least one tag
+QA	NEW_REPUTATION_FOR_ASK_NEW_QUESTION	EN	get more reputation<br>to ask new questions
+QA	NO_ANSWERS_CREATED_YET	EN	Didn't create answers.
+QA	NO_EMAIL_CONFIRMED_YET	EN	Your e-mail is not confirmed yet. If you do confirm it, it will be possible to get notified of likes, answers, comments.
+QA	NO_MESSAGES_YET	EN	You don't have messages yet.
+QA	NO_Q&A_FOUND	EN	No results in questions.
+QA	NO_QUESTIONS_CREATED_YET	EN	Didn't create questions.
+QA	OR_ELSE	EN	Or
+QA	OWNER_CANT_LIKE_QUESTION	EN	You can't like your own questions
+QA	PASSWORD_CHANGED	EN	Password has been changed.
+QA	PASSWORD_RETYPE	EN	confirm password
+QA	PICK_A_TAG	EN	Pick at least one tag
+QA	PLEASE_INSERT_EMAIL	EN	Only inserting e-mail you will be able to do password recovery.
+QA	PLEASE_LOGIN_TO_VOTE	EN	Enroll / do login to vote
+QA	QAA_ASK_QUESTION	EN	Ask a question to the community
+QA	QAA_BEFORE_ASK_QUESTION	EN	Which Pupunzi component does you question deal with? Be specific.
+QA	QA_ALREADY_HAVE_ACCOUNT	EN	I already have an account
+QA	QA_ANSWERS	EN	Answers
+QA	QA_ANSWER_LIKE_YOU_AND	EN	You and others like this answer. This answer is liked by
+QA	QA_ANSWER_TOO_SHORT	EN	Answer too short: please write something structured.
+QA	QA_ANSWER_TOTAL	EN	Answers<span>%%</span>
+QA	QA_APP_NAME	EN	Pupunzi jQuery
+QA	QA_BOX1_BODYTEXT	EN	"Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.\r\n<a href=\"http://pupunzi.open-lab.com/\">pupnzi blog</a>"
+QA	QA_BOX1_TITLE	EN	Pupunzi Blog
+QA	QA_BOX2_BODYTEXT	EN	link to github
+QA	QA_BOX2_TITLE	EN	Open Lab Q&A
+QA	QA_CHANGEPASSWORD	EN	you can change password
+QA	QA_COMMENTS	EN	Comments
+QA	QA_COMMUNITY_USERS	EN	Users enrolled
+QA	QA_CONFIRM_EMAIL_	EN	"<div style=\"text-align: center; padding: 30px 0; color:#999\">\n	<img src=\"https://s3-eu-west-1.amazonaws.com/meltaplot/images/MC-logoHead-white-short.jpg\" style=\"width: 300px; height: 69px;\" width=\"300\" /><br />\n	<br />\n	un progetto<br />\n	<a href=\"http://www.tempestafilm.it/\" target=\"_blank\"><img align=\"none\" alt=\"Tempesta Film\" height=\"51\" src=\"https://s3-eu-west-1.amazonaws.com/meltaplot/images/tempesta-w.jpg\" style=\"width: 224px; height: 51px;\" width=\"224\" /></a>&nbsp;<br />\n	in collaborazione con<br />\n	<br />\n	<a href=\"http://www.raicinema.rai.it/\" target=\"_blank\"><img align=\"none\" alt=\"Rai Cinema\" height=\"61\" src=\"https://s3-eu-west-1.amazonaws.com/meltaplot/images/raicinema-w.jpg\" style=\"width: 169px; height: 61px;\" width=\"169\" /></a><br />\n	<br />\n	con la partecipazione di<br />\n	<br />\n	<a href=\"http://www.cinetecadibologna.it/\" target=\"_blank\"><img align=\"none\" alt=\"Cineteca di Bologna\" height=\"41\" src=\"https://s3-eu-west-1.amazonaws.com/meltaplot/images/cineteca-w.jpg\" style=\"width: 109px; height: 41px;\" width=\"109\" /></a><a href=\"http://www.scuolaholden.it/\" target=\"_blank\"><img align=\"none\" alt=\"Scuola Holden\" height=\"41\" src=\"https://s3-eu-west-1.amazonaws.com/meltaplot/images/scuolaholden-w.jpg\" style=\"width: 92px; height: 41px;\" width=\"92\" /></a><br />\n	&nbsp;</div>"
+QA	QA_CONFIRM_EMAIL_FOOTER	EN	Thanks.
+QA	QA_CONFIRM_EMAIL_HEADER	EN	Pupunzi jQuery components Q&A<br>
+QA	QA_CONTACTS	EN	contacts
+QA	QA_CONTACTS_TEXT	EN	We provide refined HTML5 custom solutions. Do contact us for web & mobile projects.
+QA	QA_CREATE	EN	create
+QA	QA_CREATE_ACCOUNT	EN	create account
+QA	QA_DELETED_USER	EN	User run away
+QA	QA_DOENROLL	EN	enroll!
+QA	QA_DOLOGIN	EN	enter
+QA	QA_DO_SEARCH	EN	search
+QA	QA_EMAIL	EN	E-mail
+QA	QA_EMAIL_CONFIRMED	EN	Your e-mail is confirmed.
+QA	QA_EMAIL_CONFIRMED_ACT	EN	Now you can get notifications and enroll to the mailing list - if you wish so.
+QA	QA_EMAIL_DO_CONFIRM	EN	E-mail confirmation request
+QA	QA_EMAIL_RESET	EN	E-mail reset.
+QA	QA_EMAIL_SUBSCRIBED	EN	You are subscribed by e-mail.
+QA	QA_EMAIL_UNSUBSCRIBED	EN	You are no longer subscribed by e-mail.
+QA	QA_EMAIL_WELCOME	EN	Welcome to Pupunzi's jQuery Community
+QA	QA_EMAIL_WELCOME_BODY	EN	"<h2 style=\"color:#333!important\">Benvenuto %%,</h2>\r\n\r\nDa adesso sei un Melt-a-Ploter a tutti gli effetti. E quindi? E quindi il cinema del futuro è in mano tua e non potrai più lamentarti se i film che vai a vedere ti annoiano, ti innervosiscono, uccidono i tuoi neuroni con lenta e straziante agonia. \r\n<br>\r\n<br>\r\nPotrai invece lamentarti - e noi ti vogliamo bene lo stesso! - se la piattaforma che ti abbiamo messo a disposizione non ha tutte le funzioni che ti aspetti. \r\nMelt-a-Plot è ancora in fase beta. Ci abbiamo lavorato molto ma la vetta della perfezione si raggiunge sempre con il contributo di tutti. Aspettiamo anche il tuo! \r\n<br>\r\n<br>\r\nVai <a href=\"http://www.meltaplot.rai.it/applications/meltAPlot/user/subscriptions.jsp\">qui<a/> per iscriverti alla mailing list.\r\n<br>\r\n<br>\r\n\r\nHave fun!<br>\r\nLo staff di Melt-a-Plot <br>\r\nhttp://meltaplot.rai.it"
+QA	QA_ENROLL_FIRST	EN	Per confermare che questa è la tua e-mail da usare per le notifiche da Melt-a-Plot clicca sul link:
+QA	QA_ENROLL_MAIL	EN	"<h2 style=\"color:#333!important\">Welcome %%,</h2>\r\n\r\n  you are now a Pupunzi community member.\r\n<br>\r\nTo confirm that this is your e-mail click this link:<br>\r\n%%\r\n<br><br>\r\n\r\nGood learning & teaching!<br>\r\nPupunzi<br>\r\nhttp://pupunzi.com\r\n<br>\r\n<small>If you didn't enrol, do ignore this e-mail.</small>\r\n<br>"
+QA	QA_ENROLL_SECOND	EN	"<h2 style=\"color:#333!important\">Benvenuto %%,</h2>\n\nDa adesso sei un Melt-a-Ploter a tutti gli effetti. E quindi? E quindi il cinema del futuro è in mano tua e non potrai più lamentarti se i film che vai a vedere ti annoiano, ti innervosiscono, uccidono i tuoi neuroni con lenta e straziante agonia. \n<br>\n<br>\nPotrai invece lamentarti - e noi ti vogliamo bene lo stesso! - se la piattaforma che ti abbiamo messo a disposizione non ha tutte le funzioni che ti aspetti. \nMelt-a-Plot è ancora in fase beta. Ci abbiamo lavorato molto ma la vetta della perfezione si raggiunge sempre con il contributo di tutti. Aspettiamo anche il tuo! \n<br>\n<br>\nHave fun!<br>\nLo staff di Melt-a-Plot <br>\nhttp://meltaplot.rai.it\n<br>\n<small>Se non hai fatto questa richiesta da Melt-a-Plot, ignora questa e-mail.</small>\n<br>"
+QA	QA_ENROLL_SOCIAL	EN	Enroll with Twitter, Facebook or Google
+QA	QA_ENROLL_START_WRITING	EN	"Enroll to contribute. If you are already enrolled, do <a href=\"%%\">log in</a>."
+QA	QA_ENROLL_WEBSITE	EN	"Da adesso sei un Melt-a-Ploter a tutti gli effetti. E quindi?<br>\r\nE quindi il cinema del futuro è in mano tua. Melt-a-Plot è ancora in fase beta. Ci abbiamo lavorato molto ma la vetta della perfezione si raggiunge sempre con il contributo di tutti. Aspettiamo anche il tuo! Partecipa alle   <b>trame</b> più amate oppure scegli un <b>incipit</b> da cui partire.\r\n<br>\r\n<br>\r\nHave fun!<br>\r\n<small>\r\nLo staff di Melt-a-Plot\r\n</small>"
+QA	QA_ENROLL_YOUR_ACCOUNT	EN	Create an account
+QA	QA_FACEBOOK_LINK	EN	https://www.facebook.com/pupunzipage
+QA	QA_FULLNAME	EN	Name visualized
+QA	QA_HOME	EN	home
+QA	QA_HOWDOESITWORK_BODY_1	EN	"gioca!\r\nmelt-a-plot è semplice\r\nimpari in due minuti e non smetti \r\n\r\npezzo a pezzo!\r\nentra scegli le trame che ti piacciono di più,\r\nscrivi, aggiungi, sposta, smonta e rimonta\r\n\r\nsi gioca ma si vince? \r\nsì, altrimenti che gioco è?\r\nguadagni punti quando scrivi, quando agli altri piace ciò che scrivi, ma soprattutto quando gli altri proseguono la tua storia\r\ne chi alla fine avrà più punti verrà scelto per scrivere la sceneggiatura"
+QA	QA_HOWDOESITWORK_BODY_2	EN	"questo è l’inizio del gioco\r\ngrazie a Rai Cinema melt-a-plot sarà un film\r\ninsieme sceglieremo attori, costumi, location, musica e tanto altro ancora\r\n\r\nma attenzione! quando scrivi ….\r\nimpara ad essere lento!\r\nnon conta DOVE arrivi ma COME arrivi\r\nscrivere è sottigliezza\r\nraccontare non è solo inventare la trama\r\nè dettagli, pause, descrizione"
+QA	QA_HOWDOESITWORK_TITLE	EN	How does this work?
+QA	QA_HOWITWORKS	EN	How it works.
+QA	QA_HOW_TO_ASK_RULES	EN	"To improve your chances of getting a good answer, here are some tips:\r\n\r\n<br><br><b>Do your homework</b><br>\r\n\r\nHave you thoroughly searched for an answer before asking your question? Avoiding duplicate questions will help everyone.\r\n\r\n<br><br><b>Be specific</b><br>\r\n\r\nIf you ask a vague question, you’ll get a vague answer. But if you give us details and context, we can provide a useful answer.\r\n\r\n<br><br><b>Make it relevant to others</b><br>\r\n\r\nMake it clear how your question is relevant to more people than just you, and more of us will be interested in your question and willing to answer it."
+QA	QA_HOW_TO_ASK_TITLE	EN	Hot to ask
+QA	QA_INNER_WORKINGS	EN	More info...
+QA	QA_LATEST	EN	New Open Questions
+QA	QA_LIKE_THIS	EN	in total.
+QA	QA_LIKE_THIS_IN_TOTAL	EN	users.
+QA	QA_LIKE_THIS_IN_TOTAL_%%	EN	%% like this.
+QA	QA_LIKE_YOU_AND	EN	You and others like this.
+QA	QA_LOGGED_IN_WITH_%%	EN	You logged in with the service %%.
+QA	QA_LOGGED_IN_WITH_LOGINAME	EN	Did login with username
+QA	QA_LOGGED_IN_WITH_QA	EN	internal login
+QA	QA_LOGIN	EN	login
+QA	QA_LOGIN_START_WRITING	EN	"Do login for contributing. You can <a href=\"%%\">enroll</a> in any moment."
+QA	QA_LOGIN_YOUR_ACCOUNT	EN	Enter with your account
+QA	QA_LOGOUT	EN	log out
+QA	QA_LOGOUT_SURE	EN	Sure you want to log out
+QA	QA_MAILINGLIST_SUBSCRIBE	EN	subscribe our mailing list
+QA	QA_MAILINGLIST_UNSUBSCRIBE	EN	remove me from mailing list
+QA	QA_MAILING_APIKEY	EN	a71efedfcb399626c3a44b1f4e95b200-us6
+QA	QA_MAILING_DOMAIN	EN	us6.api.mailchimp.com
+QA	QA_MAILING_LISTID	EN	91a005172f
+QA	QA_MAILING_SUBSCRIBED	EN	You are now subscribed to the mailing list. Thanks!
+QA	QA_MAILING_UNSUBSCRIBED	EN	You are no longer subscribed to the mailing list.
+QA	QA_MESSAGES	EN	all messages
+QA	QA_MESSAGES_%%	EN	You have %% new messages.
+QA	QA_MESSAGE_ONE	EN	You have a new message.
+QA	QA_MODIFY	EN	modify data
+QA	QA_MORE_RESULTS	EN	Show more results...
+QA	QA_NEWPASSWORD	EN	new password
+QA	QA_NEWPASSWORD_CONFIRM	EN	new password confirm
+QA	QA_NEWSLETTER_BODYTEXT	EN	"<!-- Begin MailChimp Signup Form -->\n<div id=\"mc_embed_signup\">\n<form action=\"http://pupunzi.us6.list-manage.com/subscribe/post?u=4346dc9633&amp;id=91a005172f\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\" novalidate>\n	<label for=\"mce-EMAIL\">Subscribe to my mailing list</label>\n	<input type=\"email\" value=\"\" name=\"EMAIL\" class=\"email\" id=\"mce-EMAIL\" placeholder=\"email address\" required>\n	<div class=\"clear\"><input type=\"submit\" value=\"Subscribe\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\"></div>\n</form>\n</div>\n\n<!--End mc_embed_signup-->"
+QA	QA_NEWSLETTER_TITLE	EN	Pupunzi Newsletter
+QA	QA_NOTIFY_EMAIL	EN	notify events by e-mail
+QA	QA_NOTIFY_EMAIL_STOP	EN	do not notify events by e-mail
+QA	QA_PARTNER	EN	about
+QA	QA_PASSWORD	EN	password
+QA	QA_PERSON_LIKE_THIS	EN	Is liked by
+QA	QA_PITCH	EN	Pupunzi makes your life harder
+QA	QA_PLAY	EN	Q&A
+QA	QA_PLAY_NOW	EN	Q&A
+QA	QA_PRIVACY_TERMS	EN	"Enrolling you subscribe <a href=\"../privacyAndTermsOfService.jsp\">privacy policy and terms of service</a>."
+QA	QA_PRIVACY_TERMS_LINK	EN	privacy policy and terms of service
+QA	QA_QUESTION	EN	Question
+QA	QA_QUESTION_LIKE_YOU_AND	EN	You and others like this question. Liked by
+QA	QA_QUESTION_REVISIONS	EN	Question revision
+QA	QA_QUESTION_TOTAL	EN	Questions<span>%%</span>
+QA	QA_REFERENCE	EN	Pupunzi' site
+QA	QA_REFERENCE_SITE	EN	http://pupunzi.com
+QA	QA_REF_SITE	EN	Q&A service offered by
+QA	QA_REGISTER	EN	Sign up
+QA	QA_REGISTER_NEW	EN	"If you never registered click <a href=\"enrollMail.jsp\">here</a> to register a new account."
+QA	QA_REMOVE_ME	EN	remove me from Q&A
+QA	QA_SEARCH	EN	Search
+QA	QA_SIGN_UP	EN	sign up
+QA	QA_SOCIAL	EN	Pupunzi social
+QA	QA_SUBSCRIBE_USER	EN	follow
+QA	QA_SUGGESTED_TAG	EN	The tag for Pupunzi is #pupunzi
+QA	QA_TALK	EN	Questions
+QA	QA_TOP_USERS_NEW	EN	"New \"top\" users"
+QA	QA_TOP_USERS_RANK_%%	EN	"\"top\" users (of %% enrolled)"
+QA	QA_TWITTER_LINK	EN	https://twitter.com/pupunzi
+QA	QA_UNSUBSCRIBE	EN	Per non ricevere più e-mail da Melt-a-Plot:
+QA	QA_UNSUBSCRIBE_%%	EN	"In order to no longer receive e-mail <a href=\"%%\">click here</a>."
+QA	QA_UNSUBSCRIBE_USER	EN	don't follow
+QA	QA_USER	EN	Edit user
+QA	QA_USERS	EN	users
+QA	QA_USER_DISABLED	EN	User disabled
+QA	QA_USER_EDIT	EN	user data edit
+QA	QA_USER_REMOVE_SURE	EN	SUre that you want to remove yourself?
+QA	QA_USER_SETEMAIL	EN	set an e-mail
+QA	QA_USER_SUBSCRIPTIONS	EN	Your subscriptions
+QA	QA_VERIFICATION_SENT	EN	A verification e-mail has been sent.
+QA	QA_VOTES	EN	votes
+QA	QA_YOU_LIKE	EN	You like this - click to change idea
+QA	QUESTIONS_CLOSED_RECENTLY	EN	Recently closed questions
+QA	QUESTIONS_HOT	EN	Hot Questions
+QA	QUESTIONS_OPEN	EN	Top Open Questions
+QA	QUESTIONS_TOP	EN	Top Questions
+QA	QUESTIONS_YOURS	EN	Your Questions
+QA	QUESTION_ANSWERED_BY	EN	answer by
+QA	QUESTION_ANSWER_ACCEPT_BODY_%%_%%_%%_%%	EN	"This answer of yours <a href=\"%%/question/%%\">\"%%\"</a> has been accepted by <a href=\"%%/user/%%\">%%</a>."
+QA	QUESTION_ANSWER_ACCEPT_SUBJECT	EN	Your answer on Pupunzi has been accepted
+QA	QUESTION_ANSWER_COMMENT_CREATE_BODY_%%_%%_%%_%%	EN	"Your answer to <a href=\"%%/question/%%\">\"%%\"</a> has been commented by <a href=\"%%/user/%%\">%%</a>."
+QA	QUESTION_ANSWER_UPVOTE_BODY_%%_%%_%%_%%	EN	"This answer of yours <a href=\"%%/question/%%\">\"%%\"</a> has been voted up by <a href=\"%%/user/%%\">%%</a>."
+QA	QUESTION_ANSWER_UPVOTE_SUBJECT	EN	An answer of yours on Pupunzi has been liked
+QA	QUESTION_BACK	EN	back to question
+QA	QUESTION_BAN	EN	ban
+QA	QUESTION_BAN_SURE	EN	Sure to ban?
+QA	QUESTION_COMMENT_CONTENT_REPORTED	EN	Comment has been reported as inappropriate.
+QA	QUESTION_COMMENT_CREATE_BODY_%%_%%_%%_%%	EN	"This answer of yours <a href=\"%%/question/%%\">\"%%\"</a> has been commented by <a href=\"%%/user/%%\">%%</a>."
+QA	QUESTION_COMMENT_REMOVE	EN	remove
+QA	QUESTION_COMMENT_REMOVE_SURE	EN	Sure you want to remove the comment?
+QA	QUESTION_COMMENT_RESULT	EN	Result found in questions' answers
+QA	QUESTION_CONTENT_REPORTED	EN	The question has been reported.
+QA	QUESTION_CREATED_BY	EN	created by
+QA	QUESTION_CREATED_ON	EN	Created on %%
+QA	QUESTION_DELETE	EN	Delete the question
+QA	QUESTION_EXPLORING_%%_%%	EN	"Check out this question: \"%%\" on #pupunzi %%"
+QA	QUESTION_NO_ANSWERS_YET	EN	This question has no answers yet.
+QA	QUESTION_RELATED	EN	Related questions
+QA	QUESTION_REPORT	EN	spam
+QA	QUESTION_REPORT_SURE	EN	Sure to report as inappropriate?
+QA	QUESTION_RESULT	EN	Result found in questions
+QA	QUESTION_REVISED	EN	Revised on
+QA	QUESTION_REVISED_BY	EN	modified by
+QA	QUESTION_REVISED_ON	EN	on
+QA	QUESTION_REVISIONS	EN	Question revision
+QA	QUESTION_REVISIONS_FROM	EN	from
+QA	QUESTION_REVISIONS_OF	EN	Revisions by
+QA	QUESTION_REVISIONS_TO	EN	to
+QA	QUESTION_SAVE	EN	post the question
+QA	QUESTION_SHARE_SOCIALLY_BODY	EN	Share this question on Twitter, Facebook and with your friends via e-mail.
+QA	QUESTION_SHARE_SOCIALLY_LINK	EN	This is the link to share
+QA	QUESTION_SHARE_SOCIALLY_TITLE	EN	Share this question
+QA	QUESTION_SIGNALLED_BY_%%	EN	This questions has been reported by %%
+QA	QUESTION_SUBJECT	EN	Title
+QA	QUESTION_TAGGED_%%	EN	"All questions tagged <span class=\\\"tag\\\"> %% </span>:"
+QA	QUESTION_TAGS	EN	Tags
+QA	QUESTION_UNANSWERED	EN	unanswered
+QA	QUESTION_UPVOTE_BODY_%%_%%_%%_%%	EN	"This question of yours <a href=\"%%/question/%%\">\"%%\"</a> has been voted up by <a href=\"%%/user/%%\">%%</a>."
+QA	QUESTION_UPVOTE_SUBJECT	EN	Your question on Pupunzi has been voted up
+QA	QUESTION_YOUR_ANSWER	EN	Your answer
+QA	QUESTON_LIKE	EN	You like this question.
+QA	RECAPTCHA_FAIL	EN	world not recognized
+QA	RECAPTCHA_INTRO	EN	To avoid spam, write the words below:
+QA	REPUTATION	EN	reputation
+QA	SEARCH_MISSING_IN_LANGUAGE	EN	miss.
+QA	SEARCH_QA	EN	In all questions
+QA	SEARCH_THIS_TOPIC	EN	Search for this theme
+QA	SENDRESETPASS	EN	reset password
+QA	SENDRESETPASS_QUESTION	EN	If you forgot your password click on the link to get a new one.
+QA	SORRY_CONTENT_BANNED	EN	<h1>Sorry but this content has been removed by the administrators.</h1>
+QA	SUBSCRIPTIONS	EN	subscriptions
+QA	TAG_NOT_CREATED_%%	EN	The new tags you wrote (%%) have not been created - as new user, please use existing tags.
+QA	TAG_RESULT	EN	Result found in tags
+QA	TOP_TAGS	EN	Top Tags
+QA	TREE_ALTERNATIVE	EN	alternative
+QA	USERNAME	EN	user name
+QA	USER_ANSWERS_GIVEN	EN	Answers given
+QA	USER_LIKES	EN	"\"Like\" given"
+QA	USER_PROFILE	EN	user profile
+QA	USER_PUBLIC_PAGE	EN	User profile
+QA	USER_QANDA_ACTIVITY_%%	EN	%% activities in the Q&A
+QA	USER_QUESTIONS_CREATED	EN	Questions created
+QA	USER_REPUTATION	EN	Reputation
+QA	USER_RESULT	EN	Found in users
+QA	USER_SUBSCRIBED	EN	following %%
+QA	USER_SUBSCRIBING_TO	EN	%% follows
+QA	USE_COMMA_SEPARATOR	EN	use comma as separator
+QA	USE_LINKS_AND_EMOTICONS	EN	(You can use links and emoticons)
+QA	USE_ONLY_EXISTING_TAG	EN	New users: please use only existing tags.
+QA	USING_WEB_SERVICES	EN	Log in using Twitter, Facebook o Google
+QA	WANT_TO_SAVE_FILTER	EN	save filter
+QA	WATCH_VIDEO	EN	watch the video
+QA	WILL_BE_PUBLIC	EN	will be visible to all
+QA	YOUR_SUBSCRIPTIONS	EN	go to your subscriptions
+QA	YOU_ARE_USER_SUBSCRIBED	EN	following this user

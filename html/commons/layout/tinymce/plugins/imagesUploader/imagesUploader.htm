@@ -1,0 +1,10 @@
+<form id="IE" action="imagesUploader.jsp" >
+   <input type="hidden" value="" name="maleficoIE" id="maleficoIE">
+</form>
+
+<div>loading data...</div>
+<script type="text/javascript">
+   var data=parent.imageUploaderData;
+   document.getElementById("maleficoIE").value=data;
+   document.getElementById("IE").submit();
+</script>
