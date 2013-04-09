@@ -66,7 +66,7 @@ QA_PROMO_BOX
 QA_REFERENCE
 QA_REF_SITE
 
-#GOOGLE TRACKING CODE
+#Google tracking code
 QA_GOOGLE_CODE
 
 --------------------------------------------------------------
@@ -78,13 +78,13 @@ QA_GOOGLE_CODE
 
 - META: you need the first tag created to be "meta" tag.
 
-#ENABLING RECAPTCHA: ALWAYS,NEVER,MAYBE
+#Enabling recaptcha: ALWAYS,NEVER,MAYBE
 RECAPTCHA_QUESTION=MAYBE
 
-#ENABLING TAG CREATION: yes, no
+#Enabling tag creation: yes, no
 QUESTION_GRACE=no
 
-#TAGS USAGE CUTOFF
+#Tags usage cutoff
 QUESTION_TAG_CUTOFF=1
 
 
