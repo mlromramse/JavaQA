@@ -73,7 +73,6 @@ ________________________________________________________________________________
     <script src="<%=request.getContextPath()+"/commons/js/jquery/jquery.livequery.min.js"%>?_=<%=ApplicationState.getBuild()%>"></script>
     <script src="<%=request.getContextPath()+"/commons/js/jquery/jquery.timers.js"%>?_=<%=ApplicationState.getBuild()%>"></script>
 
-
   <script type="text/javascript" src="<%=request.getContextPath()%>/commons/layout/smartCombo/partSmartCombo.js"></script>
 
   <script type="text/javascript" src="<%=request.getContextPath()%>/commons/js/jquery/dateField/jquery.dateField.js"></script>
