@@ -270,7 +270,7 @@
     </applications>
   </installerGui>
   <mediaSets>
-    <win32Archive name="Windows Archive" id="53" mediaFileName="" installDir="MP" overridePrincipalLanguage="false" requires64bit="false" runPostProcessor="false" postProcessor="" failOnPostProcessorError="false" includedJRE="" manualJREEntry="false">
+    <win32Archive name="Windows Archive" id="53" mediaFileName="" installDir="QA" overridePrincipalLanguage="false" requires64bit="false" runPostProcessor="false" postProcessor="" failOnPostProcessorError="false" includedJRE="" manualJREEntry="false">
       <excludedLaunchers />
       <excludedComponents />
       <excludedBeans />
