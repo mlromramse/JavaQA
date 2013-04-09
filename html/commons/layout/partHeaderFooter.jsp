@@ -62,7 +62,7 @@ ________________________________________________________________________________
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
   <link id="appIcon" rel="apple-touch-icon-precomposed" href="/applications/QA/images/apple-touch-icon.png"/>--%>
-  <link rel="Shortcut Icon" type="image/ico" href="<%=skin!=null ? skin.imgPathPlus : request.getContextPath()+"/"%>favicon.ico">
+  <link rel="Shortcut Icon" type="image/ico" href="<%=skin!=null ? skin.imgPathPlus : request.getContextPath()+"/"%>ico.png">
   <title><%=headerFooter.toolTip%></title>
     <%=headerFooter.meta != null ? headerFooter.meta : ""%>
     <link rel=stylesheet href="<%=skin.css%>platformCss.jsp?_=<%=ApplicationState.getBuild()%>" type="text/css" media="screen">

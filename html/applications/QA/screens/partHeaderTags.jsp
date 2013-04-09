@@ -6,9 +6,9 @@
   if (!JSP.ex(hf.meta))
     hf.meta = "<meta name=\"title\" content=\""+hf.toolTip+"\">\n" +
       "      <meta name=\"keywords\" content=\"\">\n" +
-      "      <meta name=\"AUTHOR\" content=\"Tempesta Film\">\n" +
-      "      <meta name=\"Copyright\" content=\"Copyright © 2012-"+(new Date().getYear()+1900)+", Tempesta Film\">\n" +
-      "      <meta name=\"owner\" content=\"Tempesta Film\" >\n" +
+      "      <meta name=\"AUTHOR\" content=\"Pupunzi\">\n" +
+      "      <meta name=\"Copyright\" content=\"Copyright © 2012-"+(new Date().getYear()+1900)+", Matteo Bicocchi, Open Lab\">\n" +
+      "      <meta name=\"owner\" content=\"Pupunzi (Matteo Bicocchi)\" >\n" +
       "      <meta name=\"robots\" content=\"ALL\">" +
 
       "<meta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0\"/>\n" +

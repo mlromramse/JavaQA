@@ -22,7 +22,7 @@ ________________________________________________________________________________
 
 
 %>
-<div class="answer <%if (answer.equals(answer.getQuestion().getAcceptedAnswer())) {%>accepted<%}%>">
+<div id="answerBox_<%=answer.getId()%>" class="answer <%if (answer.equals(answer.getQuestion().getAcceptedAnswer())) {%>accepted<%}%>">
   <div class="QWrapper">
     <%
 
@@ -127,9 +127,9 @@ ________________________________________________________________________________
   //do comment
   if (logged != null) {
 %>&nbsp;<a title="<%=I18n.g("ADD_COMMENT")%>" class="addComment"
-                           href="javascript:void(0);" onclick="
-        $('#commA_<%=answer.getId()%>').slideDown('fast');"><span class="icon">&#164;</span><%=I18n.g("ADD_COMMENT")%>
-</a>
+                           href="javascript:void(0)" onclick="
+        $('#commA_<%=answer.getId()%>').slideDown('fast',function(){$('#ANSWER_<%=answer.getId()%>').focus()});"><span class="icon">&#164;</span><%=I18n.g("ADD_COMMENT")%>
+</a><!--#answerBox_<%=answer.getId()%>-->
   <%}%>
 
 </span>
