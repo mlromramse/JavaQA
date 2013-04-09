@@ -1,7 +1,7 @@
 JavaQA
 ======
 
-This is a Q&A app in Java.
+This is a Q&A app in Java. The web interface is adaptive - try it from mobile!
 Examples:
 http://jquery.pupunzi.com/
 
@@ -10,7 +10,26 @@ This is a standard Java web app running on Tomcat6+, JDK6+ and MySQL.
 Actually if you know your way around JDBC drivers, this is a platform on Hibernate,
 so the Q&A runs on almost any relational database (PostgreSQL, Oracle, SQL Server, ...).
 
-At setup end, the default operator is "administrator" with empty password.
+1. Publish the webapp in Tomcat
+
+2. Create an empty database
+
+3. Setup database access data in WEB-INF/config.properties:
+url=jdbc:mysql://YOUR_DB_SERVER/YOUR_EMPTY_DATABASE?useUnicode=true&characterEncoding=UTF-8
+user=root
+password=whatever
+
+4. Rename the file admin.rename in commons/administration to admin.jsp
+
+5. Start Tomcat
+
+6. Go via browser to the url http://yourserver/commons/administration/admin.jsp
+
+7. Put as password the adminPassword as from  WEB-INF/config.properties, and select "update db schema" -> database will be created
+
+8. Restart Tomcat
+
+At setup end, the default operator is "administrator" with empty password. Create at least one question with label "meta" to enable the "meta" section.
 
 #Customize labels:
 
