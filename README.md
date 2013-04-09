@@ -10,7 +10,7 @@ This is a standard Java web app running on Tomcat6+, JDK6+ and MySQL.
 Actually if you know your way around JDBC drivers, this is a platform on Hibernate,
 so the Q&A runs on almost any relational database (PostgreSQL, Oracle, SQL Server, ...).
 
-Download the web app (just the HTML )and move qa.properties from support to commons/settings, then:
+Download the web app (just the HTML) and move qa.properties from support to commons/settings, then:
 
 1. Publish the webapp in Tomcat
 
