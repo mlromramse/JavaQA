@@ -15,11 +15,8 @@ so the Q&A runs on almost any relational database (PostgreSQL, Oracle, SQL Serve
 2. Create an empty database
 
 3. Setup database access data in WEB-INF/config.properties:
-
 url=jdbc:mysql://YOUR_DB_SERVER/YOUR_EMPTY_DATABASE?useUnicode=true&characterEncoding=UTF-8
-
 user=root
-
 password=whatever
 
 4. Rename the file admin.rename in commons/administration to admin.jsp
