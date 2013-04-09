@@ -5,7 +5,7 @@ This is a Q&A app in Java. The web interface is adaptive - try it from mobile!
 Examples:
 http://jquery.pupunzi.com/
 
-If you want a customized version of this Q&A, both for design and behavior, just contact me on Twitter: http://twitter.com/ppolsinelli
+If you want a customized version of this Q&A, both for design and behavior, just contact me (Pietro Polsinelli) on Twitter: http://twitter.com/ppolsinelli
 
 #Setup
 This is a standard Java web app running on Tomcat6+, JDK6+ and MySQL.
