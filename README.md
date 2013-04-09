@@ -5,14 +5,14 @@ This is a Q&A app in Java.
 Examples:
 http://jquery.pupunzi.com/
 
-Setup:
+#Setup
 This is a standard Java web app running on Tomcat6+, JDK6+ and MySQL.
 Actually if you know your way around JDBC drivers, this is a platform on Hibernate,
 so the Q&A runs on almost any relational database (PostgreSQL, Oracle, SQL Server, ...).
 
 At setup end, the default operator is "administrator" with empty password.
 
-Customize labels:
+#Customize labels:
 
 Enter the web app ad administrator, go to settings -> label section.
 If you are starting from "Pupunzi"'s model, search for "Pupunzi" in labels and replace with your links and texts.
@@ -43,12 +43,11 @@ QA_GOOGLE_CODE
 --------------------------------------------------------------
 
 - META: you need the first tag created to be "meta" tag.
-- Customize labels:
--
-#ALWAYS,NEVER,MAYBE
+
+#ENABLING RECAPTCHA: ALWAYS,NEVER,MAYBE
 RECAPTCHA_QUESTION=MAYBE
 
-#yes, no
+#ENABLING TAG CREATION: yes, no
 QUESTION_GRACE=no
 
 #TAGS USAGE CUTOFF
