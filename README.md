@@ -30,11 +30,14 @@ password=whatever
 8. Restart Tomcat
 
 At setup end, the default operator is "administrator" with empty password. Create at least one question with label "meta" to enable the "meta" section.
+When you enter as administrator,
 
 In production, change config.properties with:
 1. development=no
 2. logOnConsole=no
 3. logOnFile=yes
+And adjust settings in in commons/settings/qa.properties, in particular set PUBLIC_SERVER_NAME to your server domain.
+
 
 
 Set error levels to ERROR.

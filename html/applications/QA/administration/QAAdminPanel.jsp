@@ -22,7 +22,7 @@
 %>
 
 <div class="admin" style="padding-top: 50px">
-  <h2><span>Brick Admin Panel</span></h2>
+  <h2><span>Q&A Admin Panel</span></h2>
 
 
   <div class="contentBox" style="text-align: center">

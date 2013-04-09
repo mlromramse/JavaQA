@@ -201,6 +201,7 @@ QA	QUESTION_ANSWERED_BY	EN	answer by
 QA	QUESTION_ANSWER_ACCEPT_BODY_%%_%%_%%_%%	EN	"This answer of yours <a href=\"%%/question/%%\">\"%%\"</a> has been accepted by <a href=\"%%/user/%%\">%%</a>."
 QA	QUESTION_ANSWER_ACCEPT_SUBJECT	EN	Your answer on Pupunzi has been accepted
 QA	QUESTION_ANSWER_COMMENT_CREATE_BODY_%%_%%_%%_%%	EN	"Your answer to <a href=\"%%/question/%%\">\"%%\"</a> has been commented by <a href=\"%%/user/%%\">%%</a>."
+QA	QUESTION_ANSWER_CREATE_BODY_%%_%%_%%_%%	EN	"This question of yours <a href=\"%%/question/%%\">%%</a> has a new answer by <a href=\"%%/user/%%\">%%</a>."
 QA	QUESTION_ANSWER_UPVOTE_BODY_%%_%%_%%_%%	EN	"This answer of yours <a href=\"%%/question/%%\">\"%%\"</a> has been voted up by <a href=\"%%/user/%%\">%%</a>."
 QA	QUESTION_ANSWER_UPVOTE_SUBJECT	EN	An answer of yours on Pupunzi has been liked
 QA	QUESTION_BACK	EN	back to question
