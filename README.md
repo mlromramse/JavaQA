@@ -38,8 +38,6 @@ In production, change config.properties with:
 3. logOnFile=yes
 And adjust settings in in commons/settings/qa.properties, in particular set PUBLIC_SERVER_NAME to your server domain.
 
-
-
 Set error levels to ERROR.
 
 #Customize labels:
