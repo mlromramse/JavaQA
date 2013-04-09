@@ -1,7 +1,14 @@
 JavaQA
 ======
+
+This is a Q&A app in Java.
+Examples:
+http://jquery.pupunzi.com/
+
 Setup:
 This is a standard Java web app running on Tomcat6+, JDK6+ and MySQL.
+Actually if you know your way around JDBC drivers, this is a platform on Hibernate,
+so the Q&A runs on almost any relational database (PostgreSQL, Oracle, SQL Server, ...).
 
 At setup end, the default operator is "administrator" with empty password.
 
