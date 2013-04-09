@@ -260,7 +260,7 @@ public class Answer extends SecuredLoggableSupport {
 
             //  server, brick id, brick text, server, user id, user name
             I18n.get(QAEvent.toString() + "_BODY_%%_%%_%%_%%",
-                    ApplicationState.serverURL, getQuestion().getId() + "", JSP.limWr(getText(), 30),
+                    ApplicationState.serverURL, getQuestion().getId() + "", JSP.limWr(JSP.htmlEncodeApexesAndTags(getText()), 30),
                     ApplicationState.serverURL, logged.getLoginName(), logged.getDisplayName()),
 
             QAEvent.toString());

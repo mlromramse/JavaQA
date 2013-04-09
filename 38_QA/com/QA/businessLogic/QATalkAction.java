@@ -114,7 +114,8 @@ public class QATalkAction {
     Question question = Question.load(id);
 
     List<QAOperator> mods = QAOperator.getModerators();
-    String message = I18n.get("QUESTION_SIGNALLED_BY_%%", "(" + logged.getId() + ") " + logged.getDisplayName()) + ": <a href=\"" + question.getURL().toLinkToHref() + "\">" + question.getDescription() + "</a>";
+    String message = I18n.get("QUESTION_SIGNALLED_BY_%%", "(" + logged.getId() + ") " + logged.getDisplayName()) + ": <a href=\"" + question.getURL().toLinkToHref() + "\">" +
+            JSP.htmlEncodeApexesAndTags(question.getDescription()) + "</a>";
     for (QAOperator mod : mods)
       mod.sendNote("QUESTION_SIGNALLED", message, QAEvent.QUESTION_SIGNALLED.toString());
     return jsResponse;
@@ -125,7 +126,8 @@ public class QATalkAction {
     Comment comment = Comment.load(id);
 
     List<QAOperator> mods = QAOperator.getModerators();
-    String message = I18n.get("COMMENT_SIGNALLED_BY_%%", "(" + logged.getId() + ") " + logged.getDisplayName()) + ": <a href=\"" + comment.getQuestion().getURL().toLinkToHref() + "\">" + comment.getText() + "</a>";
+    String message = I18n.get("COMMENT_SIGNALLED_BY_%%", "(" + logged.getId() + ") " + logged.getDisplayName()) + ": <a href=\"" + comment.getQuestion().getURL().toLinkToHref() + "\">" +
+            JSP.htmlEncodeApexesAndTags(comment.getText()) + "</a>";
     for (QAOperator mod : mods)
       mod.sendNote("COMMENT_SIGNALLED", message, QAEvent.COMMENT_SIGNALED.toString());
     return jsResponse;
@@ -168,7 +170,7 @@ public class QATalkAction {
 
     List<QAOperator> mods = QAOperator.getModerators();
     String message = I18n.get("COMMENT_ANSWER_SIGNALLED_BY_%%_%%_%%", comment.getText(), "(" + logged.getId() + ")" + logged.getDisplayName(), ": <a href=\"" +
-            comment.getAnswer().getQuestion().getURL().toLinkToHref() + "\">" + comment.getText() + "</a>");
+            comment.getAnswer().getQuestion().getURL().toLinkToHref() + "\">" + JSP.htmlEncodeApexesAndTags(comment.getText()) + "</a>");
     for (QAOperator mod : mods)
       mod.sendNote("COMMENT_SIGNALLED", message, QAEvent.COMMENT_SIGNALED.toString());
     return jsResponse;
@@ -190,7 +192,8 @@ public class QATalkAction {
     Answer answer = Answer.load(id);
 
     List<QAOperator> mods = QAOperator.getModerators();
-    String message = I18n.get("ANSWER_SIGNALLED_BY_%%", "(" + logged.getId() + ") " + logged.getDisplayName()) + ": <a href=\"" + answer.getQuestion().getURL().toLinkToHref() + "\">" + answer.getText() + "</a>";
+    String message = I18n.get("ANSWER_SIGNALLED_BY_%%", "(" + logged.getId() + ") " + logged.getDisplayName()) + ": <a href=\"" + answer.getQuestion().getURL().toLinkToHref() + "\">" +
+            JSP.htmlEncodeApexesAndTags(answer.getText()) + "</a>";
     for (QAOperator mod : mods)
       mod.sendNote("ANSWER_SIGNALLED", message, QAEvent.QUESTION_SIGNALLED.toString());
     return jsResponse;
