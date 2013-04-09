@@ -31,6 +31,13 @@ password=whatever
 
 At setup end, the default operator is "administrator" with empty password. Create at least one question with label "meta" to enable the "meta" section.
 
+In production, change config.properties with:
+1. development=no
+2. logOnConsole=no
+3. logOnFile=yes
+
+Set error levels to ERROR.
+
 #Customize labels:
 
 Enter the web app ad administrator, go to settings -> label section.
