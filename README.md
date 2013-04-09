@@ -36,6 +36,7 @@ In production, change config.properties with:
 2. logOnConsole=no
 3. logOnFile=yes
 
+
 Set error levels to ERROR.
 
 #Customize labels:
