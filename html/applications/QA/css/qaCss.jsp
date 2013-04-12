@@ -2646,16 +2646,19 @@ button .teamworkIcon:hover{font-style:normal;color:#444;}
         min-width: 100%!important
     }
 
-    #wmd-image-button, #wmd-heading-button, #wmd-hr-button, #wmd-spacer3 {display: none}
+    #wmd-image-button, #wmd-heading-button, #wmd-hr-button, #wmd-spacer3, #wmd-olist-button, #wmd-redo-button, #wmd-undo-button, .wmd-spacer {display: none !important}
+    #content ol li, #content ul li{
+        margin: 10px 15px !important;
+    }
 
-    #wmd-undo-button {left: 250px!important}
-    #wmd-redo-button {left: 270px!important}
-
-
+    .wmd-button{
+        position:static !important;
+        width: 0!important;
+    }
 
     #formSearch .icon:after {
         right: 20px!important;
-        left: auto
+        left: auto;
     }
 
     .topMenu .searchField {
@@ -2796,6 +2799,8 @@ button .teamworkIcon:hover{font-style:normal;color:#444;}
         padding: 0
 
     }
+
+
 
 }
 
