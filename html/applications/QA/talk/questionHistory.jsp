@@ -89,16 +89,12 @@
       current.revisionDate = new Date();//q.getLastModified();
       questionRevisions.add(current);
 
-  %>
-    <hr>
-    <%
+
 
       for (QuestionRevision qr : revisions) {
         questionRevisions.add(new QuestionRevisionLocal(qr));
       }
-    %>
-    <hr>
-    <%
+
 
       QuestionRevisionLocal latest = null;
 
@@ -119,17 +115,19 @@
     </a></h3>
 
     <div>
-      <hr>
-      QR: FROM <%=qr.formerDescription%> TO <%=latest.formerDescription%>
-      <hr>
+      <%--<hr>--%>
+      <%--QR: FROM <%=qr.formerDescription%> (user:<%=qr.editor.getDisplayName()%>) TO <%=latest.formerDescription%> (user:<%=latest.editor.getDisplayName()%>)--%>
+      <%--<hr>--%>
 
       <div style="display: inline-block;"><%=I18n.g("QUESTION_REVISIONS_FROM")%>
         <%
           QAOperator rev = qr.editor;
           if (questionRevisions.get(questionRevisions.size() - 1).equals(qr))
             rev = q.getOwner();
-          else
-            rev = latest.editor;
+          else {
+            int index = questionRevisions.indexOf(qr)+1;
+            rev =  questionRevisions.get(index).editor;
+          }
         %>
         <%new UserDrawer(rev, true, 30).toHtml(pageContext);%>
         <%=JSP.w(latest.revisionDate)%>
