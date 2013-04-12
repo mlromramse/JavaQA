@@ -47,7 +47,7 @@
 
     Question q = Question.load(pageState.mainObjectId);
 
-%> <div id="content">
+%><div id="content">
 <script type="text/javascript" src="../js/jsdiff.js"></script>
   <h2><span><%=I18n.g("QUESTION_REVISIONS")%></span></h2>
 
@@ -120,17 +120,21 @@
 
 %><br>Subject:
 <script>
+  setTimeout(function() {
   document.write(diffString(
           "<%=JSP.javascriptEncode(latest.formerSubject)%>",
           "<%=JSP.javascriptEncode(qr.formerSubject)%>"));
+  },2000);
 </script>
 <br><br>
 
 Question:
 <script>
+  setTimeout(function() {
   document.write(diffString(
           "<%=JSP.javascriptEncode(latest.formerDescription)%>",
           "<%=JSP.javascriptEncode(qr.formerDescription)%>"));
+  },2000);
 </script>
 <br><br>
 <%
@@ -142,7 +146,9 @@ Question:
       %><%=I18n.g("QUESTION_HAS_NO_REVISIONS_YET")%><%
     }
 
-    %></div></div><%
+    %></div>
+
+</div><%
 
   }
 %>
