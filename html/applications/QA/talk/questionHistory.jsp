@@ -61,7 +61,7 @@
      *  http://ejohn.org/projects/javascript-diff-algorithm/
      */
 
-    function escape(s) {
+    function escapex(s) {
         var n = s;
         n = n.replace(/&/g, "&amp;");
         n = n.replace(/</g, "&lt;");
@@ -93,23 +93,23 @@
 
         if (out.n.length == 0) {
             for (var i = 0; i < out.o.length; i++) {
-                str += '<del>' + escape(out.o[i]) + oSpace[i] + "</del>";
+                str += '<del>' + escapex(out.o[i]) + oSpace[i] + "</del>";
             }
         } else {
             if (out.n[0].text == null) {
                 for (n = 0; n < out.o.length && out.o[n].text == null; n++) {
-                    str += '<del>' + escape(out.o[n]) + oSpace[n] + "</del>";
+                    str += '<del>' + escapex(out.o[n]) + oSpace[n] + "</del>";
                 }
             }
 
             for ( var i = 0; i < out.n.length; i++ ) {
                 if (out.n[i].text == null) {
-                    str += '<ins>' + escape(out.n[i]) + nSpace[i] + "</ins>";
+                    str += '<ins>' + escapex(out.n[i]) + nSpace[i] + "</ins>";
                 } else {
                     var pre = "";
 
                     for (n = out.n[i].row + 1; n < out.o.length && out.o[n].text == null; n++ ) {
-                        pre += '<del>' + escape(out.o[n]) + oSpace[n] + "</del>";
+                        pre += '<del>' + escapex(out.o[n]) + oSpace[n] + "</del>";
                     }
                     str += " " + out.n[i].text + nSpace[i] + pre;
                 }
@@ -150,9 +150,9 @@
 
             if (out.o[i].text != null) {
                 os += '<span style="background-color: ' +colors[i]+ '">' +
-                        escape(out.o[i].text) + oSpace[i] + "</span>";
+                        escapex(out.o[i].text) + oSpace[i] + "</span>";
             } else {
-                os += "<del>" + escape(out.o[i]) + oSpace[i] + "</del>";
+                os += "<del>" + escapex(out.o[i]) + oSpace[i] + "</del>";
             }
         }
 
@@ -160,9 +160,9 @@
         for (var i = 0; i < out.n.length; i++) {
             if (out.n[i].text != null) {
                 ns += '<span style="background-color: ' +colors[out.n[i].row]+ '">' +
-                        escape(out.n[i].text) + nSpace[i] + "</span>";
+                        escapex(out.n[i].text) + nSpace[i] + "</span>";
             } else {
-                ns += "<ins>" + escape(out.n[i]) + nSpace[i] + "</ins>";
+                ns += "<ins>" + escapex(out.n[i]) + nSpace[i] + "</ins>";
             }
         }
 
@@ -233,7 +233,7 @@
     current.formerTags = q.getTags();
     current.revisionOf = q;
     current.editor = q.getOwner();
-    current.revisionDate = q.getLastModified();
+    current.revisionDate = new Date();//q.getLastModified();
     questionRevisions.add(current);
 
 
@@ -244,7 +244,10 @@
     QuestionRevisionLocal latest = null;
     QuestionRevisionLocal previous = null;
     boolean firstDiff = true;
+      int prog = 0;
     for (QuestionRevisionLocal qr : questionRevisions) {
+
+        prog++;
 
     //latest revision
     if (latest==null) {
@@ -259,12 +262,15 @@
   <%
 
     QAOperator rev = latest.editor;
-    /*if (firstDiff) {
+/*
+
+    if (firstDiff) {
       rev = q.getOwner();
       firstDiff = false;
     } else {
       rev = previous.editor;
-    } */
+    }
+*/
   %>
 
   <%new UserDrawer(rev,true,30).toHtml(pageContext);%>
@@ -282,18 +288,21 @@
   <%=JSP.w(qr.revisionDate)%></div></div><%
 
 %><br>Subject:
+      <div id="Rev_<%=prog%>"></div>
 <script>
-  document.write(diffString(
-          "<%=JSP.javascriptEncode(latest.formerSubject)%>",
-          "<%=JSP.javascriptEncode(qr.formerSubject)%>"));
+  $("#Rev_<%=prog%>").html(diffString(
+          "<%=JSP.javascriptEncode(qr.formerSubject)%>",
+          "<%=JSP.javascriptEncode(latest.formerSubject)%>"));
 </script>
 <br><br>
 
 Question:
-<script>
-  document.write(diffString(
-          "<%=JSP.javascriptEncode(latest.formerDescription)%>",
-          "<%=JSP.javascriptEncode(qr.formerDescription)%>"));
+      <div id="Revq_<%=prog%>"></div>
+
+      <script>
+          $("#Revq_<%=prog%>").html(diffString(
+          "<%=JSP.javascriptEncode(qr.formerDescription)%>",
+          "<%=JSP.javascriptEncode(latest.formerDescription)%>"));
 </script>
 <br><br>
 <%
