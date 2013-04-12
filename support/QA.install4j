@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <install4j version="4.1.4" transformSequenceNumber="2">
-  <directoryPresets config="C:/develop/java/QA/support/qa.properties" />
+  <directoryPresets config="C:/develop/java/JavaQA/support/qa.properties" />
   <application name="QA" distributionSourceDir="" applicationId="6948-6283-9396-1894" mediaDir="C:/tmp" mediaFilePattern="${compiler:sys.shortName}_${compiler:sys.platform}_${compiler:sys.version}" compression="6" lzmaCompression="false" pack200Compression="false" excludeSignedFromPacking="true" keepModificationTimes="false" shortName="QA" publisher="" publisherWeb="" version="1" allPathsRelative="false" backupOnSave="false" autoSave="false" convertDotsToUnderscores="true" macSignature="????" installerName="" javaMinVersion="1.6" javaMaxVersion="" allowBetaVM="false" jdkMode="runtimeJre" jdkName="">
     <languages skipLanguageSelection="false">
       <principalLanguage id="en" customLocalizationFile="" />
@@ -21,8 +21,8 @@
       <mountPoint id="17" root="" location="" mode="755" />
     </mountPoints>
     <entries>
-      <fileEntry mountPoint="54" file="C:/develop/java/QA/support/web.xml" overwrite="0" shared="false" mode="644" uninstallMode="0" />
-      <dirEntry mountPoint="17" file="C:/develop/java/QA/html" overwrite="4" shared="false" mode="644" uninstallMode="0" excludeSuffixes=".svn" dirMode="755">
+      <fileEntry mountPoint="54" file="C:/develop/java/JavaQA/support/web.xml" overwrite="0" shared="false" mode="644" uninstallMode="0" />
+      <dirEntry mountPoint="17" file="C:/develop/java/JavaQA/html" overwrite="4" shared="false" mode="644" uninstallMode="0" excludeSuffixes=".svn" dirMode="755">
         <exclude>
           <entry location=".svn" fileType="regular" />
           <entry location="applications/QA/images/box-site.jpg" fileType="regular" />

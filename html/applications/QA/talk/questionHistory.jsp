@@ -1,5 +1,35 @@
 <%@ page
-        import="com.QA.QAOperator, com.QA.Question, com.QA.QuestionRevision, com.QA.waf.UserDrawer, org.jblooming.utilities.JSP, org.jblooming.waf.ScreenArea, org.jblooming.waf.settings.I18n, org.jblooming.waf.view.PageState, java.util.List, com.QA.waf.QAScreenApp" %>
+        import="com.QA.QAOperator, com.QA.Question, com.QA.QuestionRevision, com.QA.Tag, com.QA.waf.QAScreenApp, com.QA.waf.UserDrawer,
+         org.jblooming.utilities.JSP, org.jblooming.waf.ScreenArea, org.jblooming.waf.settings.I18n, org.jblooming.waf.view.PageState, java.util.ArrayList, java.util.Date, java.util.List" %>
+<%!
+  class  QuestionRevisionLocal  {
+
+    private QAOperator editor;
+    private Date revisionDate;
+    private Question revisionOf;
+
+    private String formerSubject;
+    private String formerDescription;
+    private List<Tag> formerTags = new ArrayList();
+
+    public QuestionRevisionLocal() {
+
+    }
+
+      public QuestionRevisionLocal(QuestionRevision question) {
+
+           super();
+          this.formerDescription = question.getFormerDescription();
+
+          this.formerSubject = question.getFormerSubject();
+          this.formerTags = question.getFormerTags();
+          this.revisionOf = question.getRevisionOf();
+          this.editor = question.getEditor();
+          this.revisionDate = question.getRevisionDate();
+      }
+
+  }
+%>
 <%
   PageState pageState = PageState.getCurrentPageState();
 
@@ -29,19 +59,38 @@
 <%
 
 
-
   %><div class="contentBox revisions"><%
 
-  List<QuestionRevision> questionRevisions = q.getQuestionRevisions();
 
-  if (questionRevisions.size() > 0) {
 
-    QuestionRevision current = QuestionRevision.createRevision(q,q.getOwner());
+
+
+
+  if (q.getQuestionRevisions().size() > 0) {
+
+    List<QuestionRevisionLocal> questionRevisions = new ArrayList();
+
+    //add a fake one
+    QuestionRevisionLocal current = new QuestionRevisionLocal();
+    current.formerDescription = q.getDescription();
+
+    current.formerSubject = q.getSubject();
+    current.formerTags = q.getTags();
+    current.revisionOf = q;
+    current.editor = q.getOwner();
+    current.revisionDate = q.getLastModified();
     questionRevisions.add(current);
-    QuestionRevision latest = null;
-    QuestionRevision previous = null;
+
+
+    for (QuestionRevision qr : q.getQuestionRevisions()) {
+      questionRevisions.add(new QuestionRevisionLocal(qr));
+    }
+
+
+    QuestionRevisionLocal latest = null;
+    QuestionRevisionLocal previous = null;
     boolean firstDiff = true;
-    for (QuestionRevision qr : questionRevisions) {
+    for (QuestionRevisionLocal qr : questionRevisions) {
 
 
 
@@ -61,42 +110,42 @@
     <div style="display: inline-block;"><%=I18n.g("QUESTION_REVISIONS_FROM")%>
   <%
 
-    QAOperator rev = latest.getEditor();
+    QAOperator rev = latest.editor;
     if (firstDiff) {
       rev = q.getOwner();
       firstDiff = false;
     } else {
-      rev = previous.getEditor();
+      rev = previous.editor;
     }
   %>
 
   <%new UserDrawer(rev,true,30).toHtml(pageContext);%>
-  <%=JSP.w(latest.getRevisionDate())%></div>
+  <%=JSP.w(latest.revisionDate)%></div>
 
     <div style="display: inline-block;"><%=I18n.g("QUESTION_REVISIONS_TO")%>
 
   <%
-    rev = latest.getEditor();
+    rev = latest.editor;
     /*if (qr.equals(current)) {
       rev =  latest.getEditor();
     } */
   %>
   <%new UserDrawer(rev,true,30).toHtml(pageContext);%>
-  <%=JSP.w(qr.getRevisionDate())%></div></div><%
+  <%=JSP.w(qr.revisionDate)%></div></div><%
 
 %><br>Subject:
 <script>
   document.write(diffString(
-          "<%=JSP.javascriptEncode(latest.getFormerSubject())%>",
-          "<%=JSP.javascriptEncode(qr.getFormerSubject())%>"));
+          "<%=JSP.javascriptEncode(latest.formerSubject)%>",
+          "<%=JSP.javascriptEncode(qr.formerSubject)%>"));
 </script>
 <br><br>
 
 Question:
 <script>
   document.write(diffString(
-          "<%=JSP.javascriptEncode(latest.getFormerDescription())%>",
-          "<%=JSP.javascriptEncode(qr.getFormerDescription())%>"));
+          "<%=JSP.javascriptEncode(latest.formerDescription)%>",
+          "<%=JSP.javascriptEncode(qr.formerDescription)%>"));
 </script>
 <br><br>
 <%

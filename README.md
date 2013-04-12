@@ -5,6 +5,9 @@ This is a Q&A app in Java. The web interface is adaptive - try it from mobile!
 Examples:
 http://jquery.pupunzi.com/
 
+If you want a customized version of this Q&A, both for design and behavior, just contact me (Pietro Polsinelli) on Twitter: http://twitter.com/ppolsinelli
+
+
 #Setup
 This is a standard Java web app running on Tomcat6+, JDK6+ and MySQL.
 Actually if you know your way around JDBC drivers, this is a platform on Hibernate,
@@ -63,8 +66,9 @@ QA_PROMO_BOX
 QA_REFERENCE
 QA_REF_SITE
 
-#GOOGLE TRACKING CODE
+#Google tracking code
 QA_GOOGLE_CODE
+
 
 --------------------------------------------------------------
   String mailingServerDomain = I18n.g("QA_MAILING_DOMAIN");
@@ -75,13 +79,13 @@ QA_GOOGLE_CODE
 
 - META: you need the first tag created to be "meta" tag.
 
-#ENABLING RECAPTCHA: ALWAYS,NEVER,MAYBE
+#Enabling recaptcha: ALWAYS,NEVER,MAYBE
 RECAPTCHA_QUESTION=MAYBE
 
-#ENABLING TAG CREATION: yes, no
+#Enabling tag creation: yes, no
 QUESTION_GRACE=no
 
-#TAGS USAGE CUTOFF
+#Tags usage cutoff
 QUESTION_TAG_CUTOFF=1
 
 

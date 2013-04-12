@@ -32,6 +32,7 @@ public class QAFilter implements Filter {
       rq = hRequest.getRequestDispatcher("/applications/QA/talk/index.jsp");
       rq.forward(hRequest, hResponse);
       filterChain.doFilter(servletRequest, servletResponse);
+      return;
 
     } else if (params != null && params.length > 0 && (JSP.ex(uri) && !uri.endsWith(".jsp") && !uri.endsWith(".ico") && !uri.endsWith(".htm") && !uri.endsWith(".html") && !uri.startsWith("/applications") && !uri.startsWith("/commons"))) {
 
@@ -70,7 +71,10 @@ public class QAFilter implements Filter {
           rq = hRequest.getRequestDispatcher("/applications/QA/site/rssGenerator.jsp");
         }
 
-        rq.forward(hRequest, hResponse);
+        if (rq!=null)
+          rq.forward(hRequest, hResponse);
+        else
+          filterChain.doFilter(servletRequest, servletResponse);
 
       } else
         filterChain.doFilter(servletRequest, servletResponse);
