@@ -1,6 +1,7 @@
 package com.QA;
 
 import com.QA.rank.Hit;
+import com.google.common.collect.Lists;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.hibernate.annotations.ForeignKey;
@@ -207,6 +208,13 @@ public class Question extends SecuredLoggableSupport {
   private void setQuestionRevisions(List<QuestionRevision> questionRevisions) {
     this.questionRevisions = questionRevisions;
   }
+
+  @Transient
+  public List<QuestionRevision> getRevisions() {
+    List<QuestionRevision> qr =  getQuestionRevisions();
+    return Lists.reverse(qr);
+  }
+
 
 
   @OneToMany(targetEntity = Answer.class, cascade = CascadeType.REMOVE)

@@ -155,7 +155,7 @@ if ("DRAW_QUESTION".equals(request.getAttribute(QuestionDrawer.ACTION))) {
 
 <div class="authors"><%
   //first editors
-  for (QuestionRevision qr : question.getQuestionRevisions()) {
+  for (QuestionRevision qr : question.getRevisions()) {
     QAOperator rev = qr.getEditor();
       PageSeed ps = pageState.pageFromRoot("talk/questionHistory.jsp");
       ps.mainObjectId=question.getId();
