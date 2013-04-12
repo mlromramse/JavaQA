@@ -16,16 +16,16 @@
 
     }
 
-      public QuestionRevisionLocal(QuestionRevision question) {
+      public QuestionRevisionLocal(QuestionRevision questionRevision) {
 
            super();
-          this.formerDescription = question.getFormerDescription();
+          this.formerDescription = questionRevision.getFormerDescription();
 
-          this.formerSubject = question.getFormerSubject();
-          this.formerTags = question.getFormerTags();
-          this.revisionOf = question.getRevisionOf();
-          this.editor = question.getEditor();
-          this.revisionDate = question.getRevisionDate();
+          this.formerSubject = questionRevision.getFormerSubject();
+          this.formerTags = questionRevision.getFormerTags();
+          this.revisionOf = questionRevision.getRevisionOf();
+          this.editor = questionRevision.getEditor();
+          this.revisionDate = questionRevision.getRevisionDate();
       }
 
   }
@@ -56,15 +56,7 @@
     <ul><li><a href="<%=q.getURL().toLinkToHref()%>" class="backBtn">&nbsp;&nbsp;&nbsp;<%=I18n.g("QUESTION_BACK")%>&nbsp;&nbsp;&nbsp;</a></li></ul>
   </div>
 
-<%
-
-
-  %><div class="contentBox revisions"><%
-
-
-
-
-
+  <div class="contentBox revisions"><%
 
   if (q.getQuestionRevisions().size() > 0) {
 
@@ -86,24 +78,17 @@
       questionRevisions.add(new QuestionRevisionLocal(qr));
     }
 
-
     QuestionRevisionLocal latest = null;
     QuestionRevisionLocal previous = null;
     boolean firstDiff = true;
     for (QuestionRevisionLocal qr : questionRevisions) {
-
-
 
     //latest revision
     if (latest==null) {
       latest=qr;
       continue;
     }
-
-
-
 %>
-
   <hr><%=I18n.g("QUESTION_REVISIONS_OF")%><h3 class="questionTitle"><a href="<%=q.getURL().toLinkToHref()%>"><%=q.getSubject()%></a></h3>
   <div>
 
@@ -111,12 +96,12 @@
   <%
 
     QAOperator rev = latest.editor;
-    if (firstDiff) {
+    /*if (firstDiff) {
       rev = q.getOwner();
       firstDiff = false;
     } else {
       rev = previous.editor;
-    }
+    } */
   %>
 
   <%new UserDrawer(rev,true,30).toHtml(pageContext);%>
@@ -125,7 +110,7 @@
     <div style="display: inline-block;"><%=I18n.g("QUESTION_REVISIONS_TO")%>
 
   <%
-    rev = latest.editor;
+    rev = qr.editor;
     /*if (qr.equals(current)) {
       rev =  latest.getEditor();
     } */
