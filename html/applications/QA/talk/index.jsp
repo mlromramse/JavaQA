@@ -92,22 +92,6 @@
   %><h3><span><%=I18n.get("QUESTION_TAGGED_%%",t.getName())%></span></h3><%
     }
 
-
-    //insert yours if no selection
-
-    if (!JSP.ex(what) && logged != null) {
-
-      List<Question> qs = logged.getQuestionsNotDeleted(pageSize);
-      if (JSP.ex(qs)) {
-  %> <h3><span><%=I18n.g("QUESTIONS_YOURS")%></span></h3><%
-      for (Question q : qs) {
-
-        new QuestionDrawer(q).toHtmlCompact(pageContext);
-
-      }
-    }
-  }
-
   if ("TOP".equals(what)) {
 
 %><h3><span><%=I18n.g("QUESTIONS_TOP")%></span></h3>
