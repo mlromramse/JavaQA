@@ -87,10 +87,7 @@
       current.revisionOf = q;
       current.editor = revisions.get(0).getEditor();
       current.revisionDate = new Date();//q.getLastModified();
-      0
       questionRevisions.add(current);
-
-
 
       for (QuestionRevision qr : revisions) {
         questionRevisions.add(new QuestionRevisionLocal(qr));
