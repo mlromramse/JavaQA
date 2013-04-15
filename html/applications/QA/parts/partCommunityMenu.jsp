@@ -29,10 +29,11 @@ PageSeed here = pageState.pageFromRoot("talk/index.jsp");
         <li <%="TAGS".equals(what)?" class='currentVoiceMenu'":""%>><a href="<%=here.toLinkToHref()%>">tags</a></li>
 
           <%
-              if ("yes".equals(request.getParameter("SHOW_ADD"))) {
+              //if ("yes".equals(request.getParameter("SHOW_ADD"))) {
           %>
             <li><a class="newQ" href="/applications/QA/talk/write/askQuestion.jsp" ><%=I18n.g("ASK_NEW_QUESTION")%></a></li>
-          <%}%>
+
+        <%//}%>
 
       </ul>
     </div>

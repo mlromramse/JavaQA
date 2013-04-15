@@ -11,8 +11,7 @@
                 org.jblooming.waf.view.PageState,
                 java.util.ArrayList,
                 java.util.Date,
-                java.util.List" %>
-<%!
+                java.util.List" %><%!
   class QuestionRevisionLocal {
 
     private QAOperator editor;
@@ -40,8 +39,8 @@
     }
 
   }
-%>
-<%
+%><%
+
   PageState pageState = PageState.getCurrentPageState();
 
   if (!pageState.screenRunning) {
