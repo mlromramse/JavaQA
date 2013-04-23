@@ -112,7 +112,7 @@
 
         boolean hasAnswerEditor = logged != null && (
                 editingAnAnswer ||
-                        !logged.equals(q.getOwner()) && q.hasPermissionFor(logged, QAPermission.ANSWER_CREATE)
+                         q.hasPermissionFor(logged, QAPermission.ANSWER_CREATE)
         ) && !"yes".equals(pageState.getEntry("HAPPILY_JUST_SAVED").stringValue());
 
         if (hasAnswerEditor) {

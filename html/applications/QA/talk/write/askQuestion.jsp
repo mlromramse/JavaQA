@@ -73,6 +73,7 @@
         if (JSP.ex(TAG_NOT_CREATED)) {
           url.addClientEntry(pageState.getEntry("TAG_NOT_CREATED"));
         }*/
+          url.addClientEntry("HAPPILY_JUST_SAVED", "yes");
         response.sendRedirect(url.toLinkToHref());
         return;
         } catch (ActionException e) {

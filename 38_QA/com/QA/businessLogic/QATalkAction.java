@@ -551,7 +551,8 @@ public class QATalkAction {
       a.setAsAccepted();
       a.store();
       question.store();
-      a.hitAndNotify(question.getOwner(), QAEvent.QUESTION_ANSWER_ACCEPT);
+      if (!question.getOwner().equals(a.getOwner()))
+        a.hitAndNotify(question.getOwner(), QAEvent.QUESTION_ANSWER_ACCEPT);
       jsResponse.element("answer", a.jsonify(logged, false));
     }
     return jsResponse;
