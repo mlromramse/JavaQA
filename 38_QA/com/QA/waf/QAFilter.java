@@ -67,6 +67,9 @@ public class QAFilter implements Filter {
         } else if (JSP.ex(firstParam) && JSP.ex(secondParam) && "user".equalsIgnoreCase(firstParam)) {
           rq = hRequest.getRequestDispatcher("/applications/QA/user/profile.jsp?LNAME=" + secondParam);
 
+        } else if (JSP.ex(firstParam) && JSP.ex(secondParam) && "tags".equalsIgnoreCase(firstParam)) {
+          rq = hRequest.getRequestDispatcher("/applications/QA/talk/index.jsp?V_ID=1660053423&WHAT=TAG&TAG=" + secondParam);
+
         } else if (uri.toLowerCase().indexOf("/feed/") > -1 || uri.toLowerCase().endsWith("/feed")) {
           rq = hRequest.getRequestDispatcher("/applications/QA/site/rssGenerator.jsp");
         }
