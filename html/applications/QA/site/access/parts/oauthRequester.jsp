@@ -1,4 +1,6 @@
-<%@ page import="com.QA.connections.facebook.FacebookUtilities, com.QA.connections.twitter.TwitterUtilities, net.sf.json.JSONObject, org.jblooming.ApplicationRuntimeException, org.jblooming.tracer.Tracer, org.jblooming.utilities.JSP, org.jblooming.waf.settings.ApplicationState, org.jblooming.waf.settings.I18n, org.jblooming.waf.view.PageSeed, org.jblooming.waf.view.PageState, twitter4j.Twitter, twitter4j.TwitterFactory, twitter4j.http.RequestToken" %><%
+<%@ page import="com.QA.connections.facebook.FacebookUtilities, com.QA.connections.twitter.TwitterUtilities, net.sf.json.JSONObject, org.jblooming.ApplicationRuntimeException,
+org.jblooming.tracer.Tracer, org.jblooming.utilities.JSP, org.jblooming.waf.settings.ApplicationState, org.jblooming.waf.settings.I18n, org.jblooming.waf.view.PageSeed,
+org.jblooming.waf.view.PageState, twitter4j.Twitter, twitter4j.TwitterFactory, twitter4j.auth.RequestToken" %><%
 
   /*----------------------------------------------------------------
 
@@ -11,16 +13,18 @@
 
   try {
     if ("TWITTERAUTH".equals(pageState.command)) {
-      PageSeed twitterAuth = pageState.pageFromRoot("/site/access/parts/twitterLoginAuth.jsp");
 
-      Twitter twitter = new TwitterFactory().getInstance();
-      twitter.setOAuthConsumer(TwitterUtilities.getApiKey(), TwitterUtilities.getApiKeySecret());
-      RequestToken twitterRequestToken = twitter.getOAuthRequestToken(ApplicationState.serverURL + twitterAuth.toLinkToHref());
-      String authorizationUrl = twitterRequestToken.getAuthenticationURL();
-      session.setAttribute("twRT", twitterRequestToken.getToken());
-      session.setAttribute("twRTS", twitterRequestToken.getTokenSecret());
-      json.element("ok", true);
-      json.element("url", authorizationUrl);
+        PageSeed twitterAuth = pageState.pageFromRoot("/site/access/parts/twitterLoginAuth.jsp");
+
+        Twitter twitter = TwitterFactory.getSingleton();
+        twitter.setOAuthAccessToken(null);
+        RequestToken twitterRequestToken = twitter.getOAuthRequestToken(ApplicationState.serverURL + twitterAuth.toLinkToHref());
+
+        String authorizationUrl = twitterRequestToken.getAuthenticationURL();
+        session.setAttribute("twRT", twitterRequestToken.getToken());
+        session.setAttribute("twRTS", twitterRequestToken.getTokenSecret());
+        json.element("ok", true);
+        json.element("url", authorizationUrl);
 
     } else if ("FACEBOOKAUTH".equals(pageState.command)) {
       /*FacebookUtilities facebookUtilities = null;

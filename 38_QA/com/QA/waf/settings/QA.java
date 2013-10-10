@@ -1,6 +1,7 @@
 package com.QA.waf.settings;
 
 import com.QA.*;
+import com.QA.connections.twitter.TwitterUtilities;
 import com.QA.messages.StickyNote;
 import com.QA.rank.Hit;
 import com.QA.waf.QAScreenApp;
@@ -16,6 +17,8 @@ import org.jblooming.waf.settings.ApplicationState;
 import org.jblooming.waf.settings.ApplicationSupport;
 import org.jblooming.waf.settings.I18n;
 import org.jblooming.waf.settings.PlatformConfiguration;
+import twitter4j.Twitter;
+import twitter4j.TwitterFactory;
 
 import javax.servlet.jsp.PageContext;
 import java.io.File;
@@ -103,6 +106,9 @@ public class QA extends ApplicationSupport {
 
 
   public void configureNeedingPersistence(PlatformConfiguration pc) {
+
+    Twitter twitter = TwitterFactory.getSingleton();
+    twitter.setOAuthConsumer(TwitterUtilities.getApiKey(), TwitterUtilities.getApiKeySecret());
 
     /*try {
       MpJobsLauncher.launch("system");

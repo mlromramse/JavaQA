@@ -5,8 +5,9 @@ import org.jblooming.operator.Operator;
 import org.jblooming.persistence.exceptions.StoreException;
 import org.jblooming.utilities.JSP;
 import org.jblooming.waf.settings.ApplicationState;
-import twitter4j.*;
-import twitter4j.http.AccessToken;
+import twitter4j.DirectMessage;
+import twitter4j.TwitterException;
+
 
 public class TwitterUtilities {
 /*
@@ -43,7 +44,7 @@ http://meltaplot.com
   }
 
 
-  public static boolean testAccessToken(QAOperator logged) {
+  /*public static boolean testAccessToken(MpOperator logged) {
     boolean hasValidAcces = true;
     String settings = ""; //logged.getTwitterSettings();
     Twitter twitter = new TwitterFactory().getInstance();
@@ -63,7 +64,7 @@ http://meltaplot.com
       hasValidAcces = false;
     }
     return hasValidAcces;
-  }
+  }  */
 
   /*if the user has a twitter username still unverified this method gives back the code*/
 

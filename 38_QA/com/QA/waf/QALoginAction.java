@@ -2,7 +2,6 @@ package com.QA.waf;
 
 import com.QA.QAOperator;
 import com.QA.connections.facebook.FacebookUtilities;
-import com.QA.connections.twitter.TwitterUtilities;
 import com.google.gdata.client.authn.oauth.OAuthException;
 import net.sf.json.JSONObject;
 import org.jblooming.ApplicationException;
@@ -26,11 +25,11 @@ import org.jblooming.waf.settings.I18n;
 import org.jblooming.waf.view.ClientEntry;
 import org.jblooming.waf.view.PageSeed;
 import org.jblooming.waf.view.PageState;
-import twitter4j.ProfileImage;
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
-import twitter4j.http.AccessToken;
+import twitter4j.User;
+import twitter4j.auth.AccessToken;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -154,32 +153,30 @@ public class QALoginAction {
   }
 
   public static QAOperator enrollWithTwitter(PageState pageState, HttpServletRequest request, HttpServletResponse response) throws ApplicationException, PersistenceException, NoSuchAlgorithmException, IOException, TwitterException, ActionException {
-    QAOperator operator = null;
 
-    String twRT = (String) request.getSession().getAttribute("twRT");
-    String twRTS = (String) request.getSession().getAttribute("twRTS");
 
-    Twitter twitter = new TwitterFactory().getOAuthAuthorizedInstance(TwitterUtilities.getApiKey(), TwitterUtilities.getApiKeySecret());
-    AccessToken accessToken = twitter.getOAuthAccessToken(twRT, twRTS, pageState.getEntry("oauth_verifier").stringValueNullIfEmpty());
+    Twitter twitter = TwitterFactory.getSingleton();
+    //RequestToken twitterRequestToken = twitter.getOAuthRequestToken();
+    AccessToken accessToken = twitter.getOAuthAccessToken(pageState.getEntry("oauth_verifier").stringValueNullIfEmpty());
 
-    String twitterLoginName = twitter.getScreenName();
-    String name = JSP.ex(twitter.showUser(twitterLoginName).getName()) ? twitter.showUser(twitterLoginName).getName() : twitterLoginName;
-    String token = accessToken.getToken();
+    //AccessToken accessToken = twitter.getOAuthAccessToken();
 
-    QAOperator logged = (QAOperator) QAOperator.findByToken(twitter.getScreenName() + "@twitter");
+    String twitterLoginName = accessToken.getScreenName();
+    User twitterUser = twitter.showUser(twitterLoginName);
+    String name = JSP.ex(twitterUser.getName()) ? twitterUser.getName() : twitterLoginName;
+    //String token = accessToken.getToken();
+
+    QAOperator logged = (QAOperator) QAOperator.findByToken(twitterLoginName + "@twitter");
     if (logged != null && !logged.isEnabled())
       throw new ActionException();
     String loginName = checkFreeUsername(twitterLoginName);
-    logged = createUser(name, logged, twitter.getScreenName() + "@twitter", loginName, "", pageState);
-
-    ProfileImage img = twitter.getProfileImage(twitterLoginName, ProfileImage.NORMAL);
-    String imageUrl = img.getURL();
-    logged.setGravatarUrl(imageUrl);
+    logged = createUser(name, logged, twitterLoginName + "@twitter", loginName, "", pageState);
+    logged.setGravatarUrl(twitterUser.getProfileImageURL());
     logged.store();
 
     QALoginAction.doLog(logged, pageState, request, response);
 
-    return operator;
+    return logged;
   }
 
   public static String enrollWithFacebook(PageState pageState, HttpServletRequest request, HttpServletResponse response) throws ApplicationException, PersistenceException, NoSuchAlgorithmException, IOException, TwitterException, ActionException {
