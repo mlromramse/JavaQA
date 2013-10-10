@@ -199,8 +199,23 @@
 
   } else {
 
+  %><h3><span><%=I18n.g("QA_LATEST")%></span></h3>
 
-  %><h3><span><%=I18n.g("QUESTIONS_HOT")%></span></h3>
+    <div>
+        <div style="width: 100%;">
+            <%
+                OqlQuery oqlQuery = new OqlQuery("from " + Question.class.getName() + " as q where q.acceptedAnswer is null and q.deleted=false order by q.creationDate desc");
+                oqlQuery.getQuery().setMaxResults(pageSize);
+                List<Question> qcl = oqlQuery.list();
+
+                for (Question q : qcl) {
+                    new QuestionDrawer(q).toHtmlCompact(pageContext);
+                }
+            %></div>
+    </div>
+
+
+  <h3><span><%=I18n.g("QUESTIONS_HOT")%></span></h3>
 
   <div>
     <div>
@@ -226,20 +241,7 @@
     </div>
   </div>
 
-  <h3><span><%=I18n.g("QA_LATEST")%></span></h3>
 
-  <div>
-    <div style="width: 100%;">
-      <%
-          OqlQuery oqlQuery = new OqlQuery("from " + Question.class.getName() + " as q where q.acceptedAnswer is null and q.deleted=false order by q.creationDate desc");
-          oqlQuery.getQuery().setMaxResults(pageSize);
-          List<Question> qcl = oqlQuery.list();
-
-        for (Question q : qcl) {
-          new QuestionDrawer(q).toHtmlCompact(pageContext);
-        }
-      %></div>
-  </div>
 
 
   <%
