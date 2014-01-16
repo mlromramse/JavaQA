@@ -26,9 +26,7 @@
     out.write("<lastBuildDate>" + date + "</lastBuildDate>\n");
 
     out.write("<image>\n");
-    out.write("<url>http://meltaplot.rai.it/applications/QA/images/logo-onwhite.png</url>\n");
     out.write("<title>"+I18n.g("QA_APP_NAME")+" RSS</title>\n");
-    out.write("<link>http://meltaplot.rai.it</link>\n");
     out.write("</image>\n");
   }
 

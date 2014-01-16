@@ -83,7 +83,6 @@ ________________________________________________________________________________
   <script src="<%=request.getContextPath()+"/commons/js/date.js"%>?_=<%=ApplicationState.getBuild()%>"></script>
   <script src="<%=request.getContextPath()+"/commons/js/i18nJs.jsp"%>?_=<%=ApplicationState.getBuild()%>"></script>
 
-  <link id="meltaplotRss" rel="alternate" type="application/rss+xml" title="<%=I18n.g("QA_APP_NAME")%> RSS" href="/feed/meltaplotTop">
   <link rel=stylesheet href="/applications/QA/css/qaCss.jsp?_=<%=ApplicationState.getBuild()%>" type="text/css">
   <link rel=stylesheet href="/applications/QA/js/jquery.qtip.css" type="text/css">
 

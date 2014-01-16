@@ -88,13 +88,7 @@ public class QAOperator extends Operator {
     setEmail(email);
     getOptions().put("SEND_NOTIF_BY_EMAIL", Fields.TRUE);
 
-    /*String fromEmail = ApplicationState.getApplicationSetting(SystemConstants.FLD_MAIL_FROM);
-    String from = I18n.g("QA_APP_NAME")+" Welcome <"+fromEmail+">";
-    if (ApplicationState.platformConfiguration.development) {
-      from = I18n.g("QA_APP_NAME")+" Welcome DEV <ppolsinelli@open-lab.com>;";
-    } */
 
-    //MailHelper.sendHtmlMailInSeparateThread(from,getEmail(),I18n.g("MELTAPLOT_WELCOME"),I18n.get("MELTAPLOT_WELCOME_BODY_%%_%%",ApplicationState.serverURL,ApplicationState.serverURL));
   }
 
 

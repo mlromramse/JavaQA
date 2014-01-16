@@ -10,20 +10,6 @@ import twitter4j.TwitterException;
 
 
 public class TwitterUtilities {
-/*
-Access level Read-only Consumer key
-qLvln2UqPGzTmYXVoiOhWw
-Consumer secret
-fpmDrhXufy12SA1TP7LnB0GSLysfLHSrgH9reDksZ0
-Request token URL
-https://api.twitter.com/oauth/request_token
-Authorize URL
-https://api.twitter.com/oauth/authorize
-Access token URL
-https://api.twitter.com/oauth/access_token
-Callback URL
-http://meltaplot.com
- */
 
   public static String getApiKey() {
     if (ApplicationState.platformConfiguration.development) {

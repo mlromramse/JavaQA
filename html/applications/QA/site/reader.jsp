@@ -24,7 +24,7 @@
   google.load("feeds", "1");
 
   function initialize() {
-    var feed = new google.feeds.Feed("http://blog.meltaplot.com/feed/?a=2");
+    var feed = "SET IT!!!";
     feed.load(function (result) {
       if (!result.error) {
         //console.debug("result", result);
