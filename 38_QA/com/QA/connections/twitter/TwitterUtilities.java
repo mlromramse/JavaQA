@@ -25,8 +25,6 @@ Callback URL
 http://meltaplot.com
  */
 
-
-
   public static String getApiKey() {
     if (ApplicationState.platformConfiguration.development) {
       return ApplicationState.getApplicationSetting("TW_API_KEY_DEV");
