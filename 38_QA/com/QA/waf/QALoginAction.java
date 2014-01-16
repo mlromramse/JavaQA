@@ -2,6 +2,7 @@ package com.QA.waf;
 
 import com.QA.QAOperator;
 import com.QA.connections.facebook.FacebookUtilities;
+import com.QA.waf.settings.QA;
 import com.google.gdata.client.authn.oauth.OAuthException;
 import net.sf.json.JSONObject;
 import org.jblooming.ApplicationException;
@@ -27,7 +28,6 @@ import org.jblooming.waf.view.PageSeed;
 import org.jblooming.waf.view.PageState;
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
-import twitter4j.TwitterFactory;
 import twitter4j.User;
 import twitter4j.auth.AccessToken;
 
@@ -155,7 +155,7 @@ public class QALoginAction {
   public static QAOperator enrollWithTwitter(PageState pageState, HttpServletRequest request, HttpServletResponse response) throws ApplicationException, PersistenceException, NoSuchAlgorithmException, IOException, TwitterException, ActionException {
 
 
-    Twitter twitter = TwitterFactory.getSingleton();
+    Twitter twitter = QA.twitter;
     //RequestToken twitterRequestToken = twitter.getOAuthRequestToken();
     AccessToken accessToken = twitter.getOAuthAccessToken(pageState.getEntry("oauth_verifier").stringValueNullIfEmpty());
 

@@ -19,6 +19,7 @@ import org.jblooming.waf.settings.I18n;
 import org.jblooming.waf.settings.PlatformConfiguration;
 import twitter4j.Twitter;
 import twitter4j.TwitterFactory;
+import twitter4j.conf.ConfigurationBuilder;
 
 import javax.servlet.jsp.PageContext;
 import java.io.File;
@@ -26,6 +27,9 @@ import java.net.URL;
 import java.util.SortedMap;
 
 public class QA extends ApplicationSupport {
+
+  public static Twitter twitter;
+
   public QA() {
     super(QAOperator.class, new Permissions());
 
@@ -107,8 +111,17 @@ public class QA extends ApplicationSupport {
 
   public void configureNeedingPersistence(PlatformConfiguration pc) {
 
-    Twitter twitter = TwitterFactory.getSingleton();
-    twitter.setOAuthConsumer(TwitterUtilities.getApiKey(), TwitterUtilities.getApiKeySecret());
+    try {
+      //Twitter twitter = TwitterFactory.getSingleton();
+      ConfigurationBuilder cb = new ConfigurationBuilder();
+      cb.setUseSSL(true);
+      cb.setOAuthConsumerKey(TwitterUtilities.getApiKey())
+              .setOAuthConsumerSecret(TwitterUtilities.getApiKeySecret());
+      TwitterFactory tf = new TwitterFactory(cb.build());
+      twitter = tf.getInstance();
+    } catch (Throwable t) {
+      Tracer.platformLogger.error("TwitterBaseImpl.setOAuthConsumer ", t);
+    }
 
     /*try {
       MpJobsLauncher.launch("system");
