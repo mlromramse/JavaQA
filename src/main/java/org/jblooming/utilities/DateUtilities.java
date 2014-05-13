@@ -4,7 +4,7 @@ import org.jblooming.agenda.CompanyCalendar;
 import org.jblooming.waf.settings.ApplicationState;
 import org.jblooming.waf.settings.I18n;
 import org.jblooming.waf.view.PageState;
-import sun.util.resources.LocaleData;
+//import sun.util.resources.LocaleData;
 
 import java.text.DecimalFormat;
 import java.text.ParseException;
@@ -705,7 +705,8 @@ public class DateUtilities {
 
 
   public static String[] getLocalizedDateFormats(Locale locale) {
-    ResourceBundle data = LocaleData.getDateFormatData(locale); //for jdk 6
+    ResourceBundle data = ResourceBundle.getBundle("sun.text.resources.FormatData", locale);
+    // LocaleData.getDateFormatData(locale); //for jdk 6
     String[] localizedDateFormats = data.getStringArray("DateTimePatterns");  //for jdk 6
     //String[] localizedDateFormats = LocaleData.getLocaleElements(locale).getStringArray("DateTimePatterns"); // for jdk 5
     // hack here for transforming short year from yy to yyyy
