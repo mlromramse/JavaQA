@@ -1,4 +1,6 @@
-JavaQA
+
+
+Clone of JavaQA - Attempt to mavenize is in progress.
 ======
 
 This is a Q&A app in Java. The web interface is adaptive - try it from mobile!
